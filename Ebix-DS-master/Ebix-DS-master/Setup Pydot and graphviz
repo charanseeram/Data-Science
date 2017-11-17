@@ -1,0 +1,16 @@
+I know several guys have issues with pydot and graphic wizard.
+Here is what you have to do it:
+
+1. Install pydot from https://anaconda.org/rmg/pydot
+2. Download graphic wizard from http://www.graphviz.org/Download_windows.php
+3. Install downloaded GRaphicWizrd
+4. Add a line of code on top of the python script as below:
+import os
+os.environ["PATH"] += os.pathsep + 'C:/Program Files (x86)/Graphviz2.38/bin/'
+This path is nothing but where you have downloaded.
+5. RESTART Spyder and thing should work.
+
+As a reference: https://stackoverflow.com/questions/18438997/why-is-pydot-unable-to-find-graphvizs-executables-in-windows-8
+
+Thanks
+Sreeni Jilla
